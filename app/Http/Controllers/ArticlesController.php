@@ -14,7 +14,6 @@ class ArticlesController extends Controller
     {
 
         $articles = Article::latest('published_at')->get();
-
         return view('articles.index', compact('articles'));
 
     }
